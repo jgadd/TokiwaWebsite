@@ -14,23 +14,38 @@ body {
 
 /* ///////////////////// ABOUT PAGE STYLE //////////////////////////////////////////////////////////*/
 /* SLIDING TEXT */
-
+.about-slide{
+  
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    /*animation: animate 20s ease-in-out infinite;*/
+    background-image: url("Home4.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+    color: #FFFFFF;
+}
 .message{
   background-position: center;
     color: #FFFFFF;
     text-align: center;
+	justify-content: center;
     font-size: 55px;
     font-weight: 600;
    font-family: Nunito, sans-serif;
     text-shadow: 1.5px 1.5px 1.5px #000;
 	--height: 100px;
     min-height: var(--height);
-    line-height: var(--height);
-    background-size:cover;
-    height: 40vh;
-	background-image: url("background.jpg")
-	
+    line-height: var(--height);	
+	position: absolute;
+	top: 200px;
+	left: auto;
+
 }
+
 .slides{
 	display:inline-flex;
 	height: var(--height);
@@ -38,15 +53,19 @@ body {
 	padding: 0 -5px;
 	margin: 0 -5px;
 	
+	
 }
 .slide1{
-	color: #0005FF;
+	color: #8AE7FF;
 	display:inherit;
 	flex-flow: column nowrap;
 	transform: translateY(100%);
 	animation: slide-up 9s ease infinite;
 	
 	
+}
+.img-fluid{
+	position: relative;
 }
 @keyframes slide-up{
 	10%, 33%{
@@ -66,7 +85,7 @@ a {
 
 
 li {
-  list-style: none;
+  list-style:none;
 }
 .navbar .logo {
 	-webkit-text-stroke: 1px white;
@@ -90,10 +109,12 @@ right: 20px;
 }
 
 .menu li a {
+	display: block;
 	color: #9BE1FF;
 	-webkit-text-stroke: 0.3px black;
 	font-size: 15px;
 	text-decoration: none;
+	
 }
 .menu li:hover {
   background-color: #FF8915;
@@ -163,14 +184,14 @@ input[type=checkbox] {
   user-select: none;
 	color: #FFFFFF;
 }
-
-
-
-
+.container ul li {list-style: circle;
+}
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
-	
+	.message{
+		font-size: 30px;
+	}
  .menu {
     display:none;
     position: absolute;
