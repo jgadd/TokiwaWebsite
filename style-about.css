@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+@charset "utf-8";
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	
+}
+html, body{width: 100%;height: 100%}
+body {
+   font-family: Nunito, sans-serif;
+}
+
+/* ///////////////////// ABOUT PAGE STYLE //////////////////////////////////////////////////////////*/
+/* SLIDING TEXT */
+
+.message{
+  background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
+   font-family: Nunito, sans-serif;
+    text-shadow: 1.5px 1.5px 1.5px #000;
+	--height: 100px;
+    min-height: var(--height);
+    line-height: var(--height);
+    background-size:cover;
+    height: 40vh;
+	background-image: url("background.jpg")
+	
+}
+.slides{
+	display:inline-flex;
+	height: var(--height);
+	overflow: hidden;
+	padding: 0 -5px;
+	margin: 0 -5px;
+	
+}
+.slide1{
+	color: #0005FF;
+	display:inherit;
+	flex-flow: column nowrap;
+	transform: translateY(100%);
+	animation: slide-up 9s ease infinite;
+	
+	
+}
+@keyframes slide-up{
+	10%, 33%{
+		transform: translateY(0%)
+	}
+	43%, 66%{
+		transform: translateY(-100%)
+	}
+	76%, 100%{
+		transform: translateY(-200%)
+	}
+}
+/* END OF TEXT SLIDES */
+a {
+  text-decoration: none;
+}
+
+
+li {
+  list-style: none;
+}
+.navbar .logo {
+	-webkit-text-stroke: 1px white;
+}
+
+
+/* */
+/* NAVBAR STYLING STARTS */
+.navbar {
+right: 20px;
+	left: 40px;
+	  display: flex;
+	flex-direction:row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+	position: fixed;
+	z-index: 2;
+	font-weight: bold;
+	background-color: rgba(0,0,0,.9);
+}
+
+.menu li a {
+	color: #9BE1FF;
+	-webkit-text-stroke: 0.3px black;
+	font-size: 15px;
+	text-decoration: none;
+}
+.menu li:hover {
+  background-color: #FF8915;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 15px;
+	z-index: 1;
+	
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative; 
+	z-index: 1;
+}
+
+.dropdown {
+ background-color: rgba(0,0,0,.9);
+
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+	z-index: 1;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #FF8915;
+}
+
+.services:hover .dropdown {
+  display:inline;
+}
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+  display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+	color: #FFFFFF;
+}
+
+
+
+
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+	
+ .menu {
+    display:none;
+    position: absolute;
+    background-color: rgba(0,0,0,.9);
+	
+    right: 0;
+    left: 0;
+    text-align:center;
+    padding: 16px 0;
+	
+  }
+	
+.container-fluid .message{
+	font-size: 30px;	
+}
+.menu {
+
+}
+.navbar {height: 14%;
+}
+  .menu li:hover {
+    display: inline-block;
+    background-color:#FF8915;
+    transition: 0.3s ease;
+	 text-decoration: none;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+	  z-index: 1;
+  }
+
+  .dropdown li:hover {
+    background-color: #FF8915;
+
+  }
+		
+	}
+	

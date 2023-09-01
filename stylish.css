@@ -1,0 +1,199 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+	
+}
+/*///////////////////////// HOMEPAGE STYLE ////////////////////// */
+main {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	min-height: 100vh;
+	flex-direction: column;
+	top: 5px;
+	bottom: 50px;
+	background-image: url("background.jpg");
+	background-size: cover;
+}
+
+main h1{
+    color: #8AE7FF;
+    font-family: "Arizonia Regular";
+    font-size: 100px;
+    text-shadow: 1.5px 1.5px 2px #000000;
+}
+main h2{color: #FFFFFF; text-shadow: 1.5px 1.5px 2px #000000;}
+main h5{;color: #FFFFFF;}
+
+main button{
+	font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+	font-weight: bold;
+    padding: 15px 35px;
+	color: #FFFFFF;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    border: none;
+    border-radius: 40px;
+    transition: 0.5s;
+    background-color: #2833FF;
+	
+}
+main button:hover{
+	letter-spacing: 0.5em;
+}
+
+
+/*//////////////// Footer Style //////////////////*/
+.footer {
+  position: fixed;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+.text-center h1 strong {font-family: "Arizonia Regular"; font-size: 100;
+}
+.main .navbar {
+    background-color: #000000;
+}
+
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@media screen and (max-width:1000px){
+
+	
+	.wave {top: -10px; height: 15px;  background-size: 100px 15px;}
+.footer .icon {width: 100px; height:100px;}
+
+	footer{width: 50%; height: 30%;}
+	
+	.menu__link{font-size: 15px;}
+	.social-icon__link{font-size: 1.5rem;}
+	.footer p{font-size: 0.8rem;}
+
+	main h1{font-size: 50px;}
+	main h2{font-size: 15px;}
+	main button{font-size: 12px;}
+}
+/* //////////////////// END OF HOMEPAGE STYLE ///////////////////////////////////*/

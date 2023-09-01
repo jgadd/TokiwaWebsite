@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+.main .container-fluid {
+    position: fixed;
+	background-color: #FFFFFF;}
+html{
+	scroll-behavior: smooth;
+
+}
+
+section{
+    height: 100vh;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section01{
+	background-image: url("students_in_class.jpg");
+	background-size: cover;
+	color: #FFFFFF;
+
+}
+
+a#scroll-btn{
+	position: absolute;
+	height: 5em;
+	width: 3.5em;
+	border: 0.5em solid #fff;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 6.25em;
+	border-radius: 3em;
+}
+a#scroll-btn:before{
+	position: absolute;
+	content: "";
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 1.2em;
+	height: 1.2em;
+	width: 1.2em;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	animation: move-down 2s infinite;
+}
+@keyframes move-down{
+	80% {
+		opacity: 0.5;
+	}
+	100%{
+		transform: translateY(2.3em);
+		opacity: 0;
+	}
+}
+
+a#scroll-btn:after{
+	position: absolute;
+	content: "";
+	width: 12em;
+	display: block;
+	text-align: center;
+	left: -4.2em;
+	bottom: -2.5em;
+	font-size: 1.6em;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	font-weight: 600;
+	align-items: center;
+	
+}
+
+
+
+
+@media screen and (max-width: 500px){
+	a#scroll-btn{
+		font-size: 12px;
+		
+	}
+	#section01 h1{
+		font-size: 20px;
+		
+	}
+	#section01 h5{
+		font-size: 12px;
+	}
+	#section02 h1{
+		font-size: 20px;
+	}
+	#section02 p{
+		font-size: 12px;
+	}
+	
+}
+
+/*section:nth-child(1){
+	color: #fff;
+}
+section:nth-child(2){
+	color: #1D212B;
+	background: #fff;
+}
+section:nth-child(3){
+	color: #fff;
+}
+section:nth-child(4){
+	color: #1D212B;
+	background: #fff;
+}
+
+section .publish-slide{
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	/*animation: animate 20s ease-in-out infinite;*/
+/*	background-image: url("students_in_class.jpg");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 9px;
+		
+}
+
+section .publish-slide h1{
+	color: #FFFFFF;
+	
+}
+section .publish-slide p{
+	color: #fff;
+}
+section .publish-slide button{
+	font-size: 1em;
+    text-transform: uppercase;
+	font-weight: bold;
+    padding: 15px 35px;
+	color: #000;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    border: none;
+    border-radius: 40px;
+    transition: 0.5s;
+    background-color: #fff
+}
+section .publish-slide button a{
+	text-decoration: none;	
+	color: #000;
+}
+
+section .publish-slide button:hover{
+	letter-spacing: 0.2em;
+}
+
+section .intro-slide{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+	background-image: url("back2.jpg")
+    
+}
+section .intro-slide h2{
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000000;
+}
+section .intro-slide p{
+    color: #FFFFFF;
+}
+
+section .intro-slide button{
+	font-size: 1em;
+    text-transform: uppercase;
+	font-weight: bold;
+    padding: 15px 35px;
+	color: #000;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    border: none;
+    border-radius: 40px;
+    transition: 0.5s;
+    background-color: #ADACAC;
+}
+section .intro-slide button:hover{
+	letter-spacing: 0.2em;
+}
+
+section .Team-slide{
+	 width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+	background-image: url("back3.jpg");
+	
+}
+section .Team-slide h2{
+	margin-top: 25px;
+	color: #fff;
+}
+section .Team-slide p{
+	color: #000000;
+}
+section .Team-slide button{
+	font-size: 1em;
+    text-transform: uppercase;
+	font-weight: bold;
+    padding: 15px 35px;
+	color: #000000;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    border: none;
+    border-radius: 40px;
+    transition: 0.5s;
+    background-color: #ADACAC;
+}
+section .Team-slide button:hover{
+	letter-spacing: 0.2em;
+}
+
+
+.card.col-md-4.col-xl-12 .card-body .card-title.text-center {
+    font-size: medium;
+}
+.card.col-md-4.col-xl-12 .card-body .card-text.text-center {
+    font-size: small;
+}
+.row .col-xl-2 .text-center {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+
+section .Portfolio-slide{
+	width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+	background-image: url("About3.jpg");
+}
+.container .container .row {
+	align-content: center;
+}
+
+section .Portfolio-slide .container h2{
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px;
+}
+section .Portfolio-slide button{
+	font-size: 1em;
+    text-transform: uppercase;
+	font-weight: bold;
+    padding: 15px 35px;
+	color: #000000;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    border: none;
+    border-radius: 40px;
+    transition: 0.5s;
+    background-color: #ADACAC;
+}
+section .Portfolio-slide button:hover{
+	letter-spacing: 0.2em;
+}*/
+
+
