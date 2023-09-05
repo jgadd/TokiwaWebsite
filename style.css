@@ -263,7 +263,7 @@ main button:hover{
 	
 	.menu__link{font-size: 15px;}
 	.social-icon__link{font-size: 12px;}
-	.footer p{font-size: 12px;}
+	.footer p{font-size: 12px; bottom: 10px;}
 
 	main h1{font-size: 30px;}
 	main h2{font-size: 15px;
