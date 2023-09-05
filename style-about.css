@@ -41,9 +41,13 @@ body {
     min-height: var(--height);
     line-height: var(--height);	
 	position: absolute;
-	top: 200px;
+	
 	left: auto;
 
+}
+.about-slide .message.text-center.text-uppercase {
+	
+	
 }
 
 .slides{
@@ -187,10 +191,13 @@ input[type=checkbox] {
 .container ul li {list-style: circle;
 }
 
+
+
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
 	.message{
-		font-size: 30px;
+		font-size: 25px;
+		
 	}
  .menu {
     display:none;
