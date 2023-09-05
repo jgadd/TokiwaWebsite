@@ -9,20 +9,67 @@
 font-family: Nunito, sans-serif;
 }
 html, body{display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content:flex-end;
+  align-items:flex-end;
   min-height: 100vh;
-	width: 100%;height: 100%}
-
-
-body {
-   font-family: Nunito, sans-serif;
+	width: 100%;height: 100%
 }
+.container-fluid .menu span {
+	position: fixed;
+	z-index: 3;
+	color: white;
+	top: 15px;
+	left: 30px;
+	
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+
+
+  .sidenav a {font-size: 18px;}
+}
+
 main {
 	display: flex;
 	justify-content: center;
 	align-items:center;
 	min-height: 100vh;
+	width: 100%;
 	flex-direction: column;
 	top: 5px;
 	bottom: 50px;
@@ -34,8 +81,14 @@ main h1{
     font-family: "Arizonia Regular";
     font-size: 100px;
     text-shadow: 1.5px 1.5px 2px #000000;
+	top: 80px;
+	position: fixed;
 }
-main h2{color: #FFFFFF; text-shadow: 1.5px 1.5px 2px #000000;}
+main h2{color: #FFFFFF; text-shadow: 1.5px 1.5px 2px #000000;
+position: fixed;
+	top:200px;
+
+}
 main h5{;color: #FFFFFF;}
 
 main button{
@@ -52,6 +105,9 @@ main button{
     border-radius: 40px;
     transition: 0.5s;
     background-color: #2833FF;
+	position: fixed;
+	top: 300px;
+	
 }
 main button:hover{
 	letter-spacing: 0.5em;
@@ -214,8 +270,8 @@ main button:hover{
 	.social-icon__link{font-size: 1.5rem;}
 	.footer p{font-size: 0.8rem;}
 
-	main h1{font-size: 50px;}
-	main h2{font-size: 15px;}
+	main h1{font-size: 70px;}
+	main h2{font-size: 30px;}
 	main button{font-size: 12px;}
 	.social-icon__link {  font-size: 1rem;}
 	.icon a .img-fluid {font-size: 30px;}
