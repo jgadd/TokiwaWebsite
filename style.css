@@ -23,29 +23,29 @@ html, body{display: flex;
 	
 }
 .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 10px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-image: -webkit-linear-gradient(270deg,rgba(0,18,45,1.00) 0%,rgba(53,134,255,1.00) 53.37%);
+    background-image: -moz-linear-gradient(270deg,rgba(0,18,45,1.00) 0%,rgba(53,134,255,1.00) 53.37%);
+    background-image: -o-linear-gradient(270deg,rgba(0,18,45,1.00) 0%,rgba(53,134,255,1.00) 53.37%);
+    background-image: linear-gradient(180deg,rgba(0,18,45,1.00) 0%,rgba(53,134,255,1.00) 53.37%);
 }
 
-.sidenav a {
+.menu #mySidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #FFFFFF;
+  font-size: 15px;
+  color: #9BE1FF;
   display: block;
   transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
+	
 }
 
 .sidenav .closebtn {
@@ -55,7 +55,9 @@ html, body{display: flex;
   font-size: 36px;
   margin-left: 50px;
 }
-
+.menu #mySidenav a:hover{
+	 background-color: #B96200;
+}
 
 
 
@@ -163,8 +165,8 @@ main button:hover{
 }
 .social-icon__link:hover {
   transform: translateY(-10px);
+color: #B96200;
 }
-
 .menu__link {
   font-size: 1.2rem;
   color: #fff;
@@ -235,6 +237,10 @@ main button:hover{
 
 
 
+
+
+
+
 @keyframes animateWaves {
   0% {
     background-position-x: 1000px;
@@ -276,11 +282,10 @@ main button:hover{
 	.icon a .img-fluid {font-size: 30px;}
 	.footer .menu .menu__item {font-size: 15px;}
 	
-	.sidenav {padding-top: 15px;}
+	.sidenav {padding-top: 80px;}
 
 
-  .sidenav a {font-size: 18px;}
+
 	
 	.menu span h1{font-size: 30px;}
 }
-
