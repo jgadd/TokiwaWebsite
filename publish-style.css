@@ -493,13 +493,6 @@ tr th ion-icon {
     border: thin solid #000000;
 }
 
-
-
-
-
-
-
-
 @media screen and (max-width: 500px){
 	
 	
@@ -553,6 +546,7 @@ tr th ion-icon {
 	#section06 th #icon1 ion-icon {font-size: 50px;}
 	#section06 th #icon2 ion-icon {font-size: 50px;}
 	#section06 th #icon3 ion-icon {font-size: 50px;}
+	#section06 th #icon4 ion-icon {font-size: 50px;}
 	#section06 th #icon4 ion-icon {font-size: 50px;}
 	#section07 h2{font-size: 30px;}
 	#section07 iframe {width: 300px;height: 225;}

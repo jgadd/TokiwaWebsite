@@ -14,12 +14,13 @@ body {
   font-family: Nunito, sans-serif;
 }
 .icons-container .share-icon ion-icon{
-	font-size: 20px;
+	font-size: 30px;
 	color: white;
 }
 .icons-container .share-icon ion-icon:hover{
-	transform: scale(1.5);
+	transform: scale(2.5);
 	color: #3BA7FF;
+	
 }
 .landing_page .responsive-container-block {
   min-height: 75px;
