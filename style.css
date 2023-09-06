@@ -271,12 +271,13 @@ color: #B96200;
 	.social-icon__link{font-size: 12px;}
 	.footer p{font-size: 12px; bottom: 10px;}
 
-	main h1{font-size: 30px;}
-	main h2{font-size: 15px;
+	
+	main h2{font-size: 30px;
 	top:150px;}
 	main button{
-		font-size: 12px;
-	top: 230px;
+		font-size: .7em;
+		
+		top: 230px;
 	}
 	.social-icon__link {  font-size: 1rem;}
 	.icon a .img-fluid {font-size: 30px;}
