@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	
+}
+
+body {
+font-family: Nunito, sans-serif;
+}
+.education-slide{
+  
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    /*animation: animate 20s ease-in-out infinite;*/
+    background-image: url("Home3.1.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+    color: #FFFFFF;
+}
+.print-slide a {
+	float: right;
+	margin-left: 5px;
+	text-decoration: none;	
+	color: #FFFFFF;
+}
+
+.print-slide h2 strong {
+	font-weight: 700;
+	font-size: 2em;
+	color: #8AE7FF;
+	text-shadow: 1.5px 1.5px 3px  #000;
+	font-family: Nunito, sans-serif;
+}
+
+.print-slide .text-center {
+	color:  #FFFFFF;
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px #000;
+	font-weight: bolder;
+}
+
+
+.card-body ion-icon {
+font-weight: 800;
+	font-size: 50px;
+	color: green;
+
+}
+.card.col-md-4.col-xl-12 .card-body .card-title.text-center {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: small;
+}
+.col-xl-3 .card.col-md-4.col-xl-12 .card-img-top {
+    width: 200px;
+    height: 100px;
+}
+
+.button {
+  background-color: #1c87c9;
+  -webkit-border-radius: 60px;
+  border-radius: 20px;
+  border:none;
+  color: #eeeeee;
+  cursor: pointer;
+  display:block;
+  font-size: 20px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+	align-content: center;
+	justify-content: center;
+}
+.button a{
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+}
+@keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    box-shadow: 0 0 10px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+}
+  .button {
+        animation: glowing 1300ms infinite;
+      }
+@media screen and (max-width:1000px){
+.print-slide h2 strong {
+	font-size: 20px;
+	
+}
+	.print-slide .text-center {
+
+	font-size: 15px;
+		top: auto;
+		
+}
+	.print-slide button{
+		font-size: 10px;
+
+	}
+	
+	.main .container .text-center {font-size: 15px;
+}
+}
