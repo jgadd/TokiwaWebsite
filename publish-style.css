@@ -22,6 +22,21 @@ section{
     justify-content: center;
     align-items: center;
 }
+
+section button{
+	font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+	font-weight: bold;
+    padding: 15px 35px;
+	color: #000;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    border: none;
+    border-radius: 40px;
+    transition: 0.5s;
+    background-color: #fff;
+}
 section::after {
   position: absolute;
   bottom: 0;
@@ -35,14 +50,20 @@ section h1{
     color: #3F8BFF;
 	position: relative;
     align-items: center;
-    text-shadow: 0.5px 1px 1px #FFFFFF;
-    background-color: rgba(0,0,0,.5);
+    text-shadow: 0.5px 1px 2px #000;
+   
 	font-weight: 500;
+}
+section h3{
+	color: black;
+	font-weight: 700;
+	
 }
 section h4{
 	 color: #FFFFFF;
     align-items: center;
-	background-color: rgba(0,0,0,.5);
+	
+	
 }
 section h5{
     color: #FFFFFF;
@@ -62,47 +83,35 @@ section p{
     margin-left: 50px;
     margin-right: 50px;
     margin-right: 50px;
-    background-color: rgba(0,0,0,.5);
+   
 	
 }
-section button{
-	font-size: 1em;
-    text-decoration: none;
-    text-transform: uppercase;
-	font-weight: bold;
-    padding: 15px 35px;
-	color: #000;
-    letter-spacing: 0.05em;
-    margin-top: 10px;
-    border: none;
-    border-radius: 40px;
-    transition: 0.5s;
-    background-color: #fff;
-}
+
+
 section button a{
 	text-decoration: none;
 }
 section button:hover{
 	letter-spacing: 0.5em;background-color: #FF9E00}
+#section02 .container{
+	background-color: rgb(0,0,0,0.9);
+}
 
-#section01 { background-image: url("students_in_class.jpg"); display: flex;flex-direction: column;background-size: cover;}
-#section02 { background-image: url("back2.jpg"); display: flex;flex-direction: column;background-size: cover;}
+#section01 { background-image: url("Home1.2.jpg"); display: flex;flex-direction: column;background-size: cover;}
+#section02 {
+    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(179,230,255,1.00) 73.58%,rgba(102,205,255,1.00) 88.60%,rgba(55,55,55,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(179,230,255,1.00) 73.58%,rgba(102,205,255,1.00) 88.60%,rgba(55,55,55,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(179,230,255,1.00) 73.58%,rgba(102,205,255,1.00) 88.60%,rgba(55,55,55,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(179,230,255,1.00) 73.58%,rgba(102,205,255,1.00) 88.60%,rgba(55,55,55,1.00) 100%);
+}
+	
 #section03 { background-image: url("back3.jpg"); display: flex;flex-direction: column;background-size: cover;}
+#section03 h2{color: whitesmoke;}
 #section04 {background-image: url(Home2.jpg);display: flex;flex-direction: column;background-size: cover;}
 #section05 { background-image: -webkit-linear-gradient(0deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);
 	background-image: -moz-linear-gradient(0deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);
     background-image: -o-linear-gradient(0deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);
     background-image: linear-gradient(90deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);}
-#section06 {background-image: -webkit-linear-gradient(0deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);
-	background-image: -moz-linear-gradient(0deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);
-    background-image: -o-linear-gradient(0deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);
-    background-image: linear-gradient(90deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);
-}
-#section07 { background-image: -webkit-linear-gradient(0deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);
-	background-image: -moz-linear-gradient(0deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);
-    background-image: -o-linear-gradient(0deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);
-    background-image: linear-gradient(90deg,rgba(108,147,255,1.00) 0%,rgba(150,251,249,1.00) 100%);}
-#section08 { background-color: #FFFFFF}
 
 
 .demo a {
@@ -172,7 +181,11 @@ section button:hover{
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
-
+#section02 p{
+	color: black;
+	font-size: 11px;
+	text-align: left;
+}
 #section03 a {
   padding-top: 60px;
 }
@@ -345,140 +358,6 @@ section button:hover{
 }
 
 
-
-#section06 a {
-  padding-top: 70px;
-}
-#section06 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
-  -webkit-animation: sdb06 1.5s infinite;
-  animation: sdb06 1.5s infinite;
-  box-sizing: border-box;
-}
-
-
-@-webkit-keyframes sdb06 {
-  0% {
-    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-@keyframes sdb06 {
-  0% {
-    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-
-
-
-#section07 a {
-  padding-top: 80px;
-}
-#section07 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb07 2s infinite;
-  animation: sdb07 2s infinite;
-  opacity: 0;
-  box-sizing: border-box;
-}
-#section07 a span:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-#section07 a span:nth-of-type(2) {
-  top: 16px;
-  -webkit-animation-delay: .15s;
-  animation-delay: .15s;
-}
-#section07 a span:nth-of-type(3) {
-  top: 32px;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
-}
-@-webkit-keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-
-
-#section08 a {
-  padding-top: 60px;
-}
-#section08 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-#section08 a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
 tr th ion-icon {
 	
 	text-decoration: none;
@@ -489,28 +368,24 @@ tr th ion-icon {
 	padding-top: 5px;
 	transition: 0.5s ease-in-out;
 }
-.main #section07 iframe {
-    border: thin solid #000000;
+
+.main #section01 .container {
+	 background-color: rgba(0,0,0,.5);
+	
+
 }
 
-@media screen and (max-width: 500px){
+
+@media screen and (max-width: 1000px){
 	
 	
 	a#scroll-btn{font-size: 12px;}
-
-
-
 	#section01 h1{font-size: 30px;}
-
-
 	#section01 h4{font-size: 12px;}
-
-
 	#section02 h1{font-size: 30px;}
+	#section02 p{font-size: 10px;}
 
 
-
-	#section02 p{font-size: 12px;	}
 	
 	#section03 h1{font-size: 30px;}
 	#section03 p{font-size: 12px;}
@@ -519,16 +394,19 @@ tr th ion-icon {
 	#section03 th #grid .rounded-circle {width: 80px; height: 80px;}
 	#section03 th #grid2 .rounded-circle {width: 80px; height: 80px;}
 	#section03 th #grid3 .rounded-circle {width: 80px; height: 80px;}
-	
-	#section04 h1{font-size: 30px;}
-	#section04 p{font-size: 10px;}
-	#section04 th #gallery img {width: 50px;}
-		#section04 th #gallery1 img {width: 50px;}
-		#section04 th #gallery2 img {width: 50px;}
-		#section04 th #gallery3 img {width: 50px;}
-		#section04 th #gallery4 img {width: 50px;}
-		#section04 th #gallery5 img {width: 50px;}
-	
+
+
+
+		#section02 th #gallery1 img {width: 80px;}
+
+		#section02 th #gallery2 img {width: 80px;}
+
+
+		#section02 th #gallery3 img {width: 80px;}
+		#section02 th #gallery4 img {width: 80px;}
+		#section02 th #gallery5 img {width: 80px;}
+		#section02 th #gallery6 img {width: 80px;}
+		
 	#section04 button{font-size: 12px; width:inherit;}
 	#section04 h6{font-size: 12px;}
 	#section05 h2{font-size: 30px;}
@@ -541,16 +419,6 @@ tr th ion-icon {
 	#section05 th #ebook6 .img-fluid.rounded {width: 50px;}
 	#section05 th #ebook7 .img-fluid.rounded {width: 50px;}
 	#section05 th #ebook8 .img-fluid.rounded {width: 50px;}
-	#section06 h2{font-size: 30px;}
-	#section06 h6{font-size: 12px;}
-	#section06 th #icon1 ion-icon {font-size: 50px;}
-	#section06 th #icon2 ion-icon {font-size: 50px;}
-	#section06 th #icon3 ion-icon {font-size: 50px;}
-	#section06 th #icon4 ion-icon {font-size: 50px;}
-	#section06 th #icon4 ion-icon {font-size: 50px;}
-	#section07 h2{font-size: 30px;}
-	#section07 iframe {width: 300px;height: 225;}
-	#section07 p{font-size: 12px;}
-	#section08 h1{font-size: 30px;}
+
 	
 	}

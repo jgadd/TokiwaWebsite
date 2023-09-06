@@ -99,8 +99,6 @@ li {
 /* */
 /* NAVBAR STYLING STARTS */
 .navbar {
-right: 20px;
-	left: 40px;
 	  display: flex;
 	flex-direction:row;
   align-items: center;
@@ -109,7 +107,8 @@ right: 20px;
 	position: fixed;
 	z-index: 2;
 	font-weight: bold;
-	background-color: rgba(0,0,0,.9);
+	background-color: rgba(0,0,0,0.9);
+	width: 100%;
 }
 
 .menu li a {
@@ -196,7 +195,7 @@ input[type=checkbox] {
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 1000px) {
 	.message{
-		font-size: 15px;
+		font-size: 25px;
 		
 	}
  .menu {
