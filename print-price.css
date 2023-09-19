@@ -11,13 +11,13 @@ body {
 font-family: Nunito, sans-serif;
 }
 
-.education-slide{
+.price-slide{
   
     background-position: center;
     background-size: cover;
     height: 50vh;
     /*animation: animate 20s ease-in-out infinite;*/
-    background-image: url("back1.jpg");
+    background-image: url("Home5.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,29 +25,62 @@ font-family: Nunito, sans-serif;
     gap: 9px;
     color: #FFFFFF;
 }
-.education-slide a {
+
+.price-slide a {
 	float: right;
 	margin-left: 5px;
 	text-decoration: none;	
 	color: #FFFFFF;
 }
-.main .education-slide .text-center {
+.main .price-slide .text-center {
 	font-weight: 700;
-	font-size: 2em;
-	color: #FFFFFF;
+	font-size: 4em;
+	color: #4BC4FF;
 	text-shadow: 1.5px 1.5px 3px  #000;
 	font-family: Nunito, sans-serif;
 }
 
 
-.education-slide .text-center {
+.price-slide .text-center {
 	color:  #FFFFFF;
 	font-size: 1.5em;
 	text-shadow: 1px 1px 1px #FFFFFF;
 	font-weight: bolder;
 }
+.pricelist-slide{
+	 background-position: center;
+    background-size: cover;
+    height: 50vh;
+    /*animation: animate 20s ease-in-out infinite;*/
+    background-image: url("About3.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+    color: #FFFFFF;
+}
+.pricelist-slide a {
+	float: right;
+	margin-left: 5px;
+	text-decoration: none;	
+	color: #FFFFFF;
+}
+.main .pricelist-slide .text-center {
+	font-weight: 700;
+	font-size: 4em;
+	color: #4BC4FF;
+	text-shadow: 1.5px 1.5px 3px  #000;
+	font-family: Nunito, sans-serif;
+}
 
 
+.pricelist-slide .text-center {
+	color:  #FFFFFF;
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px #FFFFFF;
+	font-weight: bolder;
+}
 .card-body ion-icon {
 font-weight: 800;
 	font-size: 50px;
@@ -64,8 +97,6 @@ font-weight: 800;
     width: 200px;
     height: 100px;
 }
-
-
 
 
 .button {
@@ -107,6 +138,52 @@ font-weight: 800;
         animation: glowing 1300ms infinite;
       }
 
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+
+
 
 @media screen and (max-width:1000px){
 .print-slide h2 strong {
@@ -123,7 +200,7 @@ font-weight: 800;
 		font-size: 10px;
 
 	}
-	.main .education-slide .text-center {
+	.main .price-slide .text-center {
 		font-size: 15px;
 	}
 	.main .container .text-center {font-size: 15px;
