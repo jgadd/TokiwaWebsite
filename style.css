@@ -13,8 +13,8 @@ html, body{display: flex;
   align-items:flex-end;
   min-height: 100vh;
 	width: 100%;height: 100%;
-		/*background-image: url("background.jpg");*/
-/*	background-size: cover; */
+		background-image: url("background.jpg");
+	background-size: cover; 
 }
 .container-fluid .menu span {
 	position: fixed;
